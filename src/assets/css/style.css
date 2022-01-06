@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* ================================= Header Start ============================================== */
+.SiteLogo{
+    width: 100px;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.connect_wallet{
+    margin-left: 30px;
+    outline: none;
+    background-color: #15aaf7;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0px 0px 20px #15aaf7;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transform: scale(1);
+}
+
+.connect_wallet:hover{
+    box-shadow: 0px 0px 5px #15aaf7;
+    transform: scale(.9);
+}
+/* ================================= Header End ============================================== */
+
+/* ================================= Footer Start ============================================== */
+.footer_section{
+    background-color: #f8f9fa;
+}
+
+.footerLogo{
+    width: 100px;
+}
+
+.footerDirect_LinkContainer, .footer_SocialLinkContainer{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.footer_DirectLinkDiv ul{
+    line-height: 2;
+}
+
+.footerFacebook_link,
+.footerDiscord_link,
+.footerTwitter_link,
+.footerInstagram_link{
+    display: flex;
+}
+
+.Facebook_Link,
+.Discord_Link,
+.Twitter_Link,
+.Instagram_Link{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.Facebook_Icon,
+.Discord_Icon,
+.Twitter_Icon,
+.Instagram_Icon{
+    background: black;
+    width: 25px;
+    height: auto;
+    margin: 3px 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.Facebook_Icon svg{
+    color: #f8f9fa;
+}
+
+.Discord_Icon svg{
+    color: #f8f9fa;
+}
+
+.Twitter_Icon svg{
+    color: #f8f9fa;
+}
+
+.Instagram_Icon svg{
+    color: #f8f9fa;
+}
+
+.footer_SocialLinkDiv ul{
+    list-style-type: none;
+    padding: 0%;
+    line-height: 2;
+}
+
+.Facebook_Link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footerFacebook_link:hover .Facebook_Icon{
+    background-color: #3A5794;
+}
+
+.footerFacebook_link:hover .Facebook_Link{
+    color: #3A5794;
+}
+
+.footerDiscord_link:hover .Discord_Icon{
+    background-color: #6E85D3;
+}
+
+.footerDiscord_link:hover .Discord_Link{
+    color: #6E85D3;
+}
+
+.footerTwitter_link:hover .Twitter_Icon{
+    background-color: dodgerblue;
+}
+
+.footerTwitter_link:hover .Twitter_Link{
+    color: dodgerblue;
+}
+
+.footerInstagram_link:hover .Instagram_Icon{
+    background-color: #D62977;
+}
+
+.footerInstagram_link:hover .Instagram_Link{
+    color: #D62977;
+}
+/* ================================= Footer End ============================================== */
+
+/* ================================= Hero Start ============================================== */
+.hero_section{
+    padding: 40px 0px;
+}
+
+.heroSectionDiv{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero_contentDiv h1{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero_contentDiv p {
+    margin-bottom: 40px;
+    color: #7e7e7e;
+}
+
+.hero_contentDiv .hero_mint{
+    outline: none;
+    background-color: #15aaf7;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0px 0px 20px #15aaf7;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transform: scale(1);
+}
+
+.hero_contentDiv .hero_mint:hover{
+    box-shadow: 0px 0px 5px #15aaf7;
+    transform: scale(.9);
+}
+
+.hero_contentDiv .hero_mint .mint-icon{
+    font-size: 18px;
+    margin-left: 15px;
+}
+/* ================================= Hero End ============================================== */
+
+/* ================================= About Start ============================================== */
+
+.about_section{
+    padding: 40px 0px;
+}
+
+.aboutContentDiv{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+/* ================================= About End ============================================== */
+
+/* ================================= Team Start ============================================== */
+.team-section{
+    padding: 40px 0px;
+}
+.teamTitle{
+    text-align: center;
+}
+.teamTitle h2{
+    margin-bottom: 40px;
+}
+.teamCardDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.team-section .owl-carousel .owl-nav{
+    text-align: center;
+}
+
+.team-section .owl-carousel .owl-nav .owl-prev{
+    margin-right: 40px;
+    font-size: 40px;
+}
+
+.team-section .owl-carousel .owl-nav .owl-next{
+    margin-left: 40px;
+    font-size: 40px;
+}
+/* ================================= Team End ============================================== */
+
+/* ================================= FAQ Start ============================================== */
+.faq-section{
+    padding: 40px 0px;
+}
+.faqTitleDiv{
+    text-align: center;
+}
+.faqTitleDiv h2{
+    margin-bottom: 20px;
+}
+
+.faq-section .accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+
+.faq-section .accordion-button:focus{
+    box-shadow: none;
+}
+
+/* ================================= FAQ End ============================================== */
+
+/* ================================= RoadMap Start ============================================== */
+
+/* ================================= RoadMap End ============================================== */
