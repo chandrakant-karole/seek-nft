@@ -23,10 +23,10 @@ export default function Footer() {
                                 <div className="footer_DirectLinkDiv">
                                     <h4>Direct Links</h4>
                                     <ul>
-                                        <li>Home</li>
-                                        <li>About</li>
-                                        <li>Roadmap</li>
-                                        <li>Faq</li>
+                                        <li className='footerCommonLink'><a href="#home">Home</a></li>
+                                        <li className='footerCommonLink'><a href="#about">About</a></li>
+                                        <li className='footerCommonLink'><a href="#roadmap">RoadMap</a></li>
+                                        <li className='footerCommonLink'><a href="#faq">FAQ</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -57,11 +57,18 @@ export default function Footer() {
                                         <li>
                                             <div className="footerFacebook_link">
                                                 <div className="Facebook_Icon"><FontAwesomeIcon icon={faFacebook} /></div>
-                                                <a herf="/" className="Facebook_Link">Facebook</a>
+                                                <a href="/" className="Facebook_Link">Facebook</a>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <div className="footerCopyrightDiv">
+                                <span>Copyright&copy;2022 all right reserved</span>
                             </div>
                         </Col>
                     </Row>

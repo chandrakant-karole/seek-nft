@@ -4,7 +4,7 @@ import { Container, Row, Col, Accordion } from 'react-bootstrap'
 export default function Faq() {
     return (
         <>
-            <section className='faq-section'>
+            <section className='faq-section' id='faq'>
                 <Container>
                     <Row>
                         <Col lg={12}>

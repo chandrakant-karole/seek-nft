@@ -2,17 +2,16 @@ import {React, useEffect} from 'react'
 import { Col, Container, Row, Image } from 'react-bootstrap'
 import AboutImg from '../assets/images/seek-hero1.png'
 import AOS from 'aos';
-import "aos/dist/aos.css";
 
 export default function About() {
     useEffect(() => {
         AOS.init({
-          duration : 2000
+          duration : 1000
         });
-      }, []);
+      });
     return (
         <>
-            <section className='about_section'>
+            <section className='about_section' id='about'>
                 <Container>
                     <Row>
                         <Col lg={6}>

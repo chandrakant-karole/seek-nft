@@ -38,6 +38,29 @@
     box-shadow: 0px 0px 5px #15aaf7;
     transform: scale(.9);
 }
+
+.nav-link{
+    position: relative;
+    overflow: hidden;
+}
+.nav-link:hover{
+    color: #f59fac !important;
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 2px;
+    background-color: #f59fac;
+    transform: translateX(-100%);
+    transition: all .5s;
+}
+
+.nav-link:hover.nav-link::before{
+    transform: translateX(0%);
+}
 /* ================================= Header End ============================================== */
 
 /* ================================= Footer Start ============================================== */
@@ -57,6 +80,7 @@
 
 .footer_DirectLinkDiv ul{
     line-height: 2;
+    padding: 0px;
 }
 
 .footerFacebook_link,
@@ -72,6 +96,7 @@
 .Instagram_Link{
     margin-left: 10px;
     cursor: pointer;
+    transition: all .5s;
 }
 
 .Facebook_Icon,
@@ -125,6 +150,7 @@
 
 .footerFacebook_link:hover .Facebook_Link{
     color: #3A5794;
+    transform: translateX(10px);
 }
 
 .footerDiscord_link:hover .Discord_Icon{
@@ -133,6 +159,7 @@
 
 .footerDiscord_link:hover .Discord_Link{
     color: #6E85D3;
+    transform: translateX(10px);
 }
 
 .footerTwitter_link:hover .Twitter_Icon{
@@ -141,6 +168,7 @@
 
 .footerTwitter_link:hover .Twitter_Link{
     color: dodgerblue;
+    transform: translateX(10px);
 }
 
 .footerInstagram_link:hover .Instagram_Icon{
@@ -149,6 +177,43 @@
 
 .footerInstagram_link:hover .Instagram_Link{
     color: #D62977;
+    transform: translateX(10px);
+}
+
+.footerCopyrightDiv{
+    text-align: center;
+    padding: 10px 0px;
+    border-top: 1px solid #d9d9d9;
+}
+
+.footerCommonLink{
+    position: relative;
+    overflow: hidden;
+}
+
+.footerCommonLink::before{
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 2px;
+    background-color: #f59fac;
+    transform: translateX(-100%);
+    transition: all .5s;
+}
+
+.footerCommonLink:hover.footerCommonLink::before{
+    transform: translateX(-50%);
+}
+
+.footerCommonLink a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footerCommonLink a:hover{
+    color: #f59fac;
 }
 /* ================================= Footer End ============================================== */
 
@@ -211,6 +276,10 @@
     align-items: center;
     height: 100%;
 }
+
+.aboutDiv h2{
+    font-weight: 700;
+}
 /* ================================= About End ============================================== */
 
 /* ================================= Team Start ============================================== */
@@ -222,6 +291,7 @@
 }
 .teamTitle h2{
     margin-bottom: 40px;
+    font-weight: 700;
 }
 .teamCardDiv{
     display: flex;
@@ -252,6 +322,7 @@
 }
 .faqTitleDiv h2{
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .faq-section .accordion-button:not(.collapsed){
@@ -265,5 +336,51 @@
 /* ================================= FAQ End ============================================== */
 
 /* ================================= RoadMap Start ============================================== */
+.roadMapTitle{
+    margin-bottom: 40px;
+    text-align: center;
+}
 
+.roadMapTitle h2{
+    font-weight: 700;
+}
+
+.phaseTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phaseTitle h2{
+    border-left: 5px solid #000;
+    padding-left: 5px;
+}
+
+.phaseTitle svg{
+    color: rgb(9, 184, 9);
+}
+
+.roadMapBar_outer{
+    margin-top: 40px;
+    width: 100%;
+    height: 6px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 2px grey;
+}
+
+.roadMapBar_inner{
+    height: 6px;
+    background-color: #f59fac;
+    width: 1%;
+    border-radius: 25px;
+    animation-name: filling;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+@keyframes filling {
+    0%{width: 1%;}
+    100%{width: 100%;}
+}
 /* ================================= RoadMap End ============================================== */

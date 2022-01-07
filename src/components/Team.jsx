@@ -1,10 +1,18 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import User from '../assets/images/seek-hero1.png'
+import User from '../assets/images/member.jpg'
+import AOS from 'aos';
 
 export default function Team() {
+    useEffect(() => {
+        AOS.init({
+          duration : 1000
+        });
+      }, []);
+
+
     const options = {
         items: 4,
         margin: 30,
@@ -34,12 +42,12 @@ export default function Team() {
     };
     return (
         <>
-            <section className='team-section'>
+            <section className='team-section' id='team'>
                 <Container>
                     <Row>
                         <Col>
                             <div className="teamTitle">
-                                <h2>Our Team</h2>
+                                <h2 data-aos={'zoom-in-up'}>Our Team</h2>
                             </div>
                         </Col>
                     </Row>

@@ -16,11 +16,11 @@ export default function Header() {
                             style={{ maxHeight: '400px' }}
                             navbarScroll
                         >
-                            <Nav.Link href="#action1">Home</Nav.Link>
-                            <Nav.Link href="#action2">About</Nav.Link>
-                            <Nav.Link href="#action3">RoadMap</Nav.Link>
-                            <Nav.Link href="#action4">Team</Nav.Link>
-                            <Nav.Link href="#action4">Faq</Nav.Link>
+                            <Nav.Link href="#home">Home</Nav.Link>
+                            <Nav.Link href="#about">About</Nav.Link>
+                            <Nav.Link href="#roadmap">RoadMap</Nav.Link>
+                            <Nav.Link href="#team">Team</Nav.Link>
+                            <Nav.Link href="#faq">Faq</Nav.Link>
                         </Nav>
                             <button className='connect_wallet'>Connect Wallet</button>
                     </Navbar.Collapse>

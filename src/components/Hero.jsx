@@ -6,7 +6,7 @@ import HeroImg from '../assets/images/seek-hero1.png'
 export default function Hero() {
     return (
         <>
-            <section className='hero_section'>
+            <section className='hero_section' id='home'>
                 <Container>
                     <Row>
                         <Col lg={6}><Image src={HeroImg} fluid /></Col>
