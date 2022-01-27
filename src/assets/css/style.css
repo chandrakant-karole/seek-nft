@@ -1,0 +1,131 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+
+}
+
+
+
+/* =============== APP =================== */
+html{
+    background-image: url('../images/bg.svg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    /* height: 100vh; */
+}
+
+body{
+    background: transparent;
+}
+
+/* #root{
+    height: 100vh;
+    display: contents;
+} */
+/* ================ Login ==================== */
+
+.SiteLogo{
+    width: 200px;
+}
+
+.et_pb_row {
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+}
+
+
+.et_pb_section_1 {
+    min-height: 50vh;
+}
+
+.et_pb_section {
+    background: transparent;
+}
+
+.et_pb_row:after, .et_pb_row_inner:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    width: 0;
+}
+/* ====================== Header ======================== */
+
+.siteHeader{
+    background-color: #fff !important;
+    box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+}
+.logoutBtn{
+    display: flex;
+    width: 90px;
+    padding: 9px 23px;
+    text-decoration: none;
+    border: 1px solid rgb(21, 170, 247);
+    background: white;
+    font-size: 14px;
+    border-radius: 0px;
+    color: black;
+}
+
+.logoutBtn:hover{
+    background:rgb(21, 170, 247);
+    color: #fff;
+}
+/* ====================== Footer ============================ */
+#main-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 555;
+}
+
+#footer-bottom{
+    background-color: #ababab;
+    padding: 15px 0 5px;
+}
+
+#footer-info {
+    text-align: left;
+    color: #666;
+    padding-top: 5px;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.et-social-icons {
+    float: right;
+}
+
+.et-social-icons li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.et-social-icon a {
+    display: inline-block;
+    font-size: 24px;
+    color: #666;
+}
+
+
+/* =============== Other ==================== */
+
+
+.uploadContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0px;
+}
