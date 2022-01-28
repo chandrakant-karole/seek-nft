@@ -1,17 +1,22 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux'
-import {addCookie} from '../state/action/index'
+import Cookies from 'js-cookie'
 
 export default function Landing() {
 
-    const cool = useSelector(state => state.changeCookie);
-    console.log(cool)
-    const dispatch = useDispatch();
+function mint(){
+  var a = Cookies.get('_SeekUser');
+    console.log("mint page cookie",a);
+    if(a === '1' || a === '2' || a === '3'){
+        console.log("Mint Page");
+        window.location.href = 'https://www.seeknft.com/byu/upload';
+    } else {
+      window.location.href = 'https://www.seeknft.com/byu/login';
+    }
 
-    window.onload(dispatch(addCookie("myHome")))
+}
+
 
   return <>
-    <button>Mint</button>
-    <h1>{cool}</h1>
+    <button onClick={mint}>Mint</button>
   </>
 }

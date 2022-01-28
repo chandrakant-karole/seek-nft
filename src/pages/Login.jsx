@@ -1,15 +1,23 @@
 import { React } from 'react'
 // import { Link } from 'react-router-dom'
-import { useCookies } from "react-cookie";
+import Cookies from 'js-cookie'
 // import { CookieState } from '../context/cookiesProvider'
 
 export default function Login() {
-    const [cookies, setCookie] = useCookies(["user"]);
+    var a = Cookies.get('_SeekUser');
+    console.log("a",a);
+    if(a === '1' || a === '2' || a === '3'){
+        console.log("adjfkasdf");
+        window.location.href = 'https://www.seeknft.com/byu/upload';
+    }
+    // const testC =  useCookies.get('_SeekUser');
+    // console.log("testC",testC);
+    // const [cookies, setCookie] = useCookies(["user"]);
     // const { user } = CookieState();
 
 
     // console.log("chatproveiser",user)
-    console.log(cookies)
+    // console.log(cookies)
     // function handleCookie() {
     // //     setCookie(JSON.stringify({"Jon's User ID": 1,
     // //     "Mike's User ID": 2,
@@ -50,14 +58,16 @@ export default function Login() {
                 console.log(response1)
 
                 if (response1 === 1) {
-                    setCookie("_SeekUser", res.data.cookie_id,
-                    ///cookie Data ID
-                        console.log('cookie_id', res.data.cookie_id)
+                    Cookies.set('_SeekUser',  res.data.cookie_id)
 
-                        //  {
-                        //       path: "/login"
-                        //     }
-                    );
+                    // setCookie("_SeekUser", res.data.cookie_id,
+                    // ///cookie Data ID
+                    //     console.log('cookie_id', res.data.cookie_id)
+
+                    //     //  {
+                    //     //       path: "/login"
+                    //     //     }
+                    // );
                     localStorage.setItem('loginToken', JSON.stringify({
                         "login": true
                     }))
@@ -87,7 +97,7 @@ export default function Login() {
         //    console.log(userPassword.value)
     }
 
-    console.log(cookies.user)
+    // console.log(cookies._SeekUser)
 
     return (
         <>
